@@ -1,0 +1,70 @@
+.login {
+    background-color: rgb(240, 242, 245);
+}
+
+.login_container {
+    
+    padding: 132px 0 92px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login_recent_logins {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: auto;
+    align-self: flex-start;
+
+}
+
+.login_facebook_logo {
+    width: 200px;
+    height: 70px;
+}
+
+.login_title {
+    font-size: 24px;
+    margin: 0 0 0 20px;
+    text-align: left;
+}
+
+.footer_menu_top {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: auto;
+    align-self: center;
+    justify-content: flex-start;
+    width: 980px;
+    flex-wrap: wrap;
+   
+}
+.line{
+    width: 900px;
+    color:#dddfe2;
+}
+footer{
+    padding-top: 20px;
+}
+.footer_li {
+    padding-left: 10px;
+    text-decoration: none;
+    color: rgb(138, 141, 145);
+}
+.footer_li:hover{
+    text-decoration: underline;
+}
+.footer_menu_bottom{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: auto;
+    align-self: center;
+    justify-content: flex-start;
+    width: 980px;
+    flex-wrap: wrap;
+}
