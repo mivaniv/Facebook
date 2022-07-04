@@ -9,7 +9,7 @@ export default function Login() {
             <div className='login_page'>
                 <div className='login_container'>
                     <div className='login_recent_logins'>
-                        <img className='login_facebook_logo' src={logo} ></img>
+                        <img className='login_facebook_logo' src={logo} alt="logo"></img>
                         <h2 className='login_title'>Facebook допомагає тримати звязок з рідними та близькими</h2>
 
                     </div>
