@@ -5,7 +5,7 @@ import FormAuth from "./Components/FormAuth/FormAuth";
 function App() {
   return (
     <div className="App">
-      <FormAuth />
+     
       <Login></Login>
     </div>
   );

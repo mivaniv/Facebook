@@ -1,5 +1,5 @@
 .login {
-    background-color: #e9ebee;
+    
     height: 100vh;
     align-items: center;
     display: flex;
@@ -10,7 +10,7 @@
 .login__container{
     width: 400px;
     height: 380px;
-    margin-top: 81px;
+    
     display: flex;
     flex-direction: column;
     padding: 20px;

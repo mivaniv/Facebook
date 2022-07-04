@@ -1,17 +1,20 @@
 import React from 'react'
 import logo from './img/facebook.svg'
 import './Login.css'
-
+import Form from '../FormAuth/FormAuth'
 
 export default function Login() {
     return (
         <>
-            <div className='login'>
+            <div className='login_page'>
                 <div className='login_container'>
                     <div className='login_recent_logins'>
                         <img className='login_facebook_logo' src={logo} ></img>
                         <h2 className='login_title'>Facebook допомагає тримати звязок з рідними та близькими</h2>
 
+                    </div>
+                    <div className='login_form'>
+                        <Form></Form>
                     </div>
                 </div>
             </div>
