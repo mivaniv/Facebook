@@ -12,6 +12,7 @@ import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import OfflineBoltIcon from "@material-ui/icons/OfflineBolt";
 import DialpadIcon from "@material-ui/icons/Dialpad";
+import HomeIcon from "@material-ui/icons/Home";
 
 function FormAuth({ user }) {
   const navigate = useNavigate();
@@ -33,12 +34,22 @@ function FormAuth({ user }) {
           <img src={fb} alt="facebook-logo" width="50px" />
         </Link>
         <div className="homeHeader__inputSearch">
-          <input type="text" placeholder="Search" />
           <SearchIcon className="homeHeader__inputButton" />
+          <input
+            type="text"
+            placeholder="Пошук у facebook"
+            className="inputSearch"
+          />
         </div>
       </div>
 
-      <section  className="icon_wraper">
+      <section>
+        <a href="#" className="header_icon">
+          <HomeIcon fontSize="large" />
+        </a>
+      </section>
+
+      <section className="icon_wraper">
         <a href="#" className="header_icon">
           <DialpadIcon fontSize="large" />
         </a>
