@@ -3,13 +3,12 @@ import "./FormAuth.css";
 import { Link } from "react-router-dom";
 import { auth } from "./firebase.js";
 import { useNavigate } from "react-router-dom";
-import ModalWindow from "../Modal/ModalWindow";
+
 
 function FormAuth() {
   const [email, setEmail] = useState("");
   const navigate = useNavigate("");
   const [password, setPassword] = useState("");
-  const[modalActive,setModalActive] = useState()
 
   const login = (event) => {
     event.preventDefault();
@@ -20,7 +19,24 @@ function FormAuth() {
         navigate("/");
       })
       .catch((e) => {
-        alert(e.message);
+        if (
+          e.message ===
+          "The password is invalid or the user does not have a password."
+        ) {
+          alert("Please check your credentials again");
+        } else if (
+          e.message ===
+          "There is no user record corresponding to this identifier. The user may have been deleted."
+        ) {
+          navigate("/register");
+          //  window.scrollTo({
+          //    top: document.body.scrollHeight,
+          //    left: 0,
+          //    behavior: "smooth",
+          //  });
+        } else {
+          alert(e.message);
+        }
       });
   };
 
@@ -57,10 +73,11 @@ function FormAuth() {
             <hr />
           </center>
           <center>
-            {/*<Link to="/register">*/}
-              <button className="login__createNewAccount" onClick={() => setModalActive(true)}>Створити обліковий запис</button>
-              <ModalWindow active={modalActive} setActive={setModalActive}/>
-            {/*</Link>*/}
+            <Link to="/register">
+              <button className="login__createNewAccount">
+                Створити обліковий запис
+              </button>
+            </Link>
           </center>
         </form>
       </div>
