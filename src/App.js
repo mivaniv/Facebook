@@ -1,9 +1,9 @@
-import "./App.css"
-import Login from "./Components/Login/Login"
-import { useState } from "react"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import HomeHeader from "./Components/HomeHeader/HomeHeader"
-import { auth } from "./Components/FormAuth/firebase"
+import "./App.css";
+import Login from "./Components/Login/Login";
+import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomeHeader from "./Components/HomeHeader/HomeHeader";
+import { auth } from "./Components/FormAuth/firebase";
 
 function App() {
   const [user, setUser] = useState([]);
