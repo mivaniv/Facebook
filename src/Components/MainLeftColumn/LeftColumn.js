@@ -25,7 +25,7 @@ export default function LeftColumn() {
         { "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yv/r/GJ4EaivDaSj.png", "text": "Facebook Pay", "id": "7" },
         { "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/mAnT0r8GSOm.png", "text": "Favourites", "id": "8" },
         { "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/n2vd2VduYc1.png", "text": "Fundraisers", "id": "9" },
-        { "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/n2vd2VduYc1.png", "text": "Gaming Video", "id": "10" },
+        { "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yk/r/JN4tUY_MDMK.png", "text": "Gaming Video", "id": "10" },
         { "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yu/r/AisrwUSvQf8.png", "text": "Live videos", "id": "11" },
         { "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/4Y9Xi2D3hJv.png", "text": "Messenger", "id": "12" },
         { "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/hTN47HVa4oS.png", "text": "Most recent", "id": "13" },
