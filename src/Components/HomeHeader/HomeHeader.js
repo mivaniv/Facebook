@@ -4,7 +4,6 @@ import { Link, useNavigate } from "react-router-dom";
 import fb from "./images/5968764.png";
 import { auth } from "../FormAuth/firebase";
 import HelpIcon from "@material-ui/icons/Help";
-import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import SettingsIcon from "@material-ui/icons/Settings";
 import Brightness2Icon from "@material-ui/icons/Brightness2";
 import FeedbackIcon from "@material-ui/icons/Feedback";
@@ -14,6 +13,16 @@ import OfflineBoltIcon from "@material-ui/icons/OfflineBolt";
 import DialpadIcon from "@material-ui/icons/Dialpad";
 import HomeIcon from "@material-ui/icons/Home";
 import LeftColumn from '../MainLeftColumn/LeftColumn'
+
+
+import PeopleIcon from "@material-ui/icons/People";
+import SmartDisplayIcon from "@mui/icons-material/SmartDisplay";
+import AutoAwesomeMosaicIcon from "@mui/icons-material/AutoAwesomeMosaic";
+import mark from "./images/mark.jpeg";
+
+
+
+
 
 function FormAuth({ user }) {
   const navigate = useNavigate();
@@ -45,26 +54,46 @@ function FormAuth({ user }) {
         </div>
       </div>
 
-      <section>
-        <a href="#" className="header_icon">
-          <HomeIcon fontSize="large" />
-        </a>
+      <section className="icons_center">
+        <div className="header_icon">
+          <HomeIcon color="disabled" style={{ fontSize: 45 }} />
+        </div>
+        <div className="header_icon">
+          <SmartDisplayIcon color="disabled" style={{ fontSize: 45 }} />
+        </div>
+        <div className="header_icon">
+          <PeopleIcon color="disabled" style={{ fontSize: 45 }} />
+        </div>
+
+        <div className="header_icon">
+          <AutoAwesomeMosaicIcon color="disabled" style={{ fontSize: 45 }} />
+        </div>
       </section>
 
       <section className="icon_wraper">
-        <a href="#" className="header_icon">
-          <DialpadIcon fontSize="large" />
-        </a>
-        <a href="#" className="header_icon">
-          <OfflineBoltIcon fontSize="large" />
-        </a>
+        <div className="header_icon-right">
+          <DialpadIcon style={{ fontSize: 38 }} />
+        </div>
 
-        <a href="#" className="header_icon">
-          <NotificationsIcon fontSize="large" />
-        </a>
+        <div className="header_icon-right">
+          <OfflineBoltIcon style={{ fontSize: 40 }} />
+        </div>
+
+        <div className="header_icon-right">
+          <NotificationsIcon style={{ fontSize: 40 }} />
+        </div>
+
         <div className="dropdown">
-          <AccountCircleIcon className="dropdown" fontSize="large" />
+          <div className="avatar_wraper">
+            <img src={mark} alt="" className="avatar_picture" />
+          </div>
+
           <div className="dropdown-content">
+            <div href="#" className="avatar_name">
+              <img src={mark} alt="" className="avatar_picture" />
+              <h3>Mark Zuckerberg</h3>
+            </div>
+
             <a href="#">
               <p>
                 <SettingsIcon fontSize="large" /> Налаштування та
