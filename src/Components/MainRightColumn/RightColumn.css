@@ -1,0 +1,23 @@
+.rightColumnContainer {
+    display: inline;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    width: 400px;
+    min-width: 254px;
+    padding: 20px;
+    background-color: rgb(237, 240, 246);
+}
+
+.rightColumnContainerTop {
+    display: flex;
+    justify-content: space-between
+}
+.rightColumnContainerTopImg a{
+   margin: 10px;
+}
+.rightColumnContainerContacts{
+    display: flex;
+    flex-direction: column;
+}
+

@@ -13,6 +13,7 @@ import OfflineBoltIcon from "@material-ui/icons/OfflineBolt";
 import DialpadIcon from "@material-ui/icons/Dialpad";
 import HomeIcon from "@material-ui/icons/Home";
 import LeftColumn from '../MainLeftColumn/LeftColumn'
+import RightColumn from "../MainRightColumn/RightColumn";
 
 
 import PeopleIcon from "@material-ui/icons/People";
@@ -129,6 +130,7 @@ function FormAuth({ user }) {
       </section>
     </div>
     <LeftColumn></LeftColumn>
+      <RightColumn/>
     </>
   );
 }

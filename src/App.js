@@ -4,7 +4,7 @@ import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomeHeader from "./Components/HomeHeader/HomeHeader";
 import { auth } from "./Components/FormAuth/firebase";
-import ModalWindow from "./Components/Modal/ModalWindow.jsx";
+import ModalWindow from "./Components/Modal/ModalWindow.js";
 
 function App() {
   const [user, setUser] = useState([]);
