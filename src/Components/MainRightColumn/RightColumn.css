@@ -1,8 +1,6 @@
 .rightColumnContainer {
     display: inline;
-    position: absolute;
-    top: 90px;
-    right: 0;
+   
     width: 400px;
     min-width: 254px;
     padding: 20px;

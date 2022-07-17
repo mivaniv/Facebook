@@ -1,0 +1,20 @@
+.feed{
+    display: flex;
+    background: rgb(237, 240, 246);
+    width: 45%;
+    justify-content: center ;
+}
+.feed-container{
+    width: 100%;
+    height: auto;
+    
+    
+    display: flex;
+    
+    margin: 16px 64px 0 64px;
+    flex-direction: column;
+    align-items: center;
+
+
+    
+}

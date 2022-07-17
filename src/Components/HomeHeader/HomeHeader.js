@@ -12,14 +12,15 @@ import NotificationsIcon from "@material-ui/icons/Notifications";
 import OfflineBoltIcon from "@material-ui/icons/OfflineBolt";
 import DialpadIcon from "@material-ui/icons/Dialpad";
 import HomeIcon from "@material-ui/icons/Home";
-import LeftColumn from '../MainLeftColumn/LeftColumn'
-import RightColumn from "../MainRightColumn/RightColumn";
+
 
 
 import PeopleIcon from "@material-ui/icons/People";
 import SmartDisplayIcon from "@mui/icons-material/SmartDisplay";
 import AutoAwesomeMosaicIcon from "@mui/icons-material/AutoAwesomeMosaic";
 import mark from "./images/mark.jpeg";
+
+import Main from "../Main/Main"
 
 
 
@@ -129,8 +130,7 @@ function FormAuth({ user }) {
         </div>
       </section>
     </div>
-    <LeftColumn></LeftColumn>
-      <RightColumn/>
+    <Main userPic={mark}></Main>
     </>
   );
 }

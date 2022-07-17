@@ -1,0 +1,7 @@
+.main-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(237, 240, 246);
+   
+}
