@@ -1,0 +1,15 @@
+.Contacts {
+    display: flex;
+    padding-bottom:10px;
+    padding-top:10px;
+}
+
+.Contacts p {
+    margin: 0;
+    padding-left: 10px;
+}
+
+.Contacts:hover {
+    border-radius: 10px;
+    background: rgba(178, 178, 187, 0.73);
+}

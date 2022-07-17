@@ -1,0 +1,8 @@
+.story-carousel-container{
+    display: flex;
+    flex-direction: row;
+    height: 230px;
+    overflow-x: auto;
+    width:99%;
+    padding: 20px 20px 0 20px;
+}

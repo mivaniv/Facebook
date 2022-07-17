@@ -3,10 +3,10 @@ import './LeftColumn.css'
 
 
 
-export default function LeftColumn() {
+export default function LeftColumn({userPic , userName}) {
 
     const firstList = [
-        { "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/S0U5ECzYUSu.png", "text": "Name", "id": "1" },
+        { "url": {userPic}, "text": "Name", "id": "1" },
         { "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/S0U5ECzYUSu.png", "text": "Friends", "id": "2" },
         { "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/PrjLkDYpYbH.png", "text": "Groups", "id": "3" },
         { "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/duk32h44Y31.png", "text": "Watch", "id": "4" },
