@@ -43,13 +43,13 @@ export default function LeftColumn({userPic , userName}) {
         <div className='left_column_container'>
             <ul className='left_column_top_list'>
                 {firstList.map((el) => (
-                    <li key={el.id} className='list_element'><img src={el.url}></img><span className='list_title'>{el.text}</span></li>
+                    <li key={el.id} className='list_element'><img src={el.url} alt="#"/><span className='list_title'>{el.text}</span></li>
                 ))}
 
             </ul>
             <ul className={hidden ? "left_column_bot_list " : "left_column_bot_list hidden"}>
                 {secondList.map((sec) => (
-                    <li key={sec.id} className='list_element'><img src={sec.url}></img><span className='list_title'>{sec.text}</span></li>
+                    <li key={sec.id} className='list_element'><img src={sec.url} alt="#"/><span className='list_title'>{sec.text}</span></li>
                 ))}
             </ul>
             <button className='see_more_button' onClick={() => closedList()}><p className='button_more_arrow'>{hidden ? "^" : ">"}</p><span>{hidden ? "See less" : "See more"}</span></button>

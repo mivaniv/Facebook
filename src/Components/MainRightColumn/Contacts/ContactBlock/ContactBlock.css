@@ -1,0 +1,21 @@
+.ContactBlock {
+    display: flex;
+    margin: 5px;
+}
+
+.ContactBlock p {
+    margin: 0;
+    padding-left:20px;
+    padding-top:10px;
+}
+
+.ContactBlock:hover {
+    border-radius: 10px;
+    background: rgba(178, 178, 187, 0.73);
+}
+
+.ContactBlock img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}

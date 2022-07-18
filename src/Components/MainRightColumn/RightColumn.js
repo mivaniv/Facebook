@@ -20,10 +20,6 @@ export default function RightColumn() {
             </div>
             <div className="rightColumnContainerContacts">
                 <Contacts/>
-                <Contacts/>
-                <Contacts/>
-                <Contacts/>
-                <Contacts/>
             </div>
             <hr/>
             <div className="rightColumnContainerGroup">

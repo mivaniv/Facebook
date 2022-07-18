@@ -1,21 +1,24 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import './Contacts.css'
-import PersonIcon from "@mui/icons-material/Person";
+import ModalWindowChat from "./ModalWindowChat/ModalWindowChat";
+import ContactBlock from "./ContactBlock/ContactBlock";
 
 export default function Contacts() {
-    // const NAME = "https://api.github.com/users/mojombo"
-    // {
-    //     fetch(NAME)
-    //         .then(res => res.json())
-    //         .then(e => {
-    //             console.log(e.name)
-    //         })
-    // }
+    const [arr , setArr] = useState([])
+    const [modalActive,setModalActive] = useState(false)
+    useEffect(() => {
+        fetch("https://api.github.com/users")
+            .then(response => response.json())
+            .then(data => setArr(data))
+    }, [])
+
+
     return (
-        <div className="Contacts">
-            <PersonIcon width={50} height={50}/>
-            <p>Name Surname</p>
-            <div className="online"></div>
+        <div className="Contacts" onClick={() => setModalActive(true)}>
+            {arr.map((st) => (
+                <ContactBlock key={st.id} imgUrl={st.avatar_url} nickname={st.login}/>
+            ))}
+            <ModalWindowChat active={modalActive} setActive={setModalActive}/>
         </div>
     )
 }
