@@ -4,12 +4,12 @@ import LeftColumn from '../MainLeftColumn/LeftColumn'
 import RightColumn from '../MainRightColumn/RightColumn'
 import "./Main.css"
 
-export default function Main({userPic}) {
+export default function Main({userPic,user}) {
   return (
-    <div className='main-block'>
-      <LeftColumn userPic={userPic}></LeftColumn>
+    <div className="main-block">
+      <LeftColumn userPic={userPic} title={user?.displayName}></LeftColumn>
       <Feed></Feed>
       <RightColumn></RightColumn>
     </div>
-  )
+  );
 }

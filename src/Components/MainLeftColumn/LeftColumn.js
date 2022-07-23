@@ -3,10 +3,10 @@ import './LeftColumn.css'
 
 
 
-export default function LeftColumn({userPic , userName}) {
+export default function LeftColumn({userPic ,title}) {
 
     const firstList = [
-        { "url": {userPic}, "text": "Name", "id": "1" },
+        // { "url": {userPic}, "text": "Name", "id": "1" },
         { "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/S0U5ECzYUSu.png", "text": "Friends", "id": "2" },
         { "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/PrjLkDYpYbH.png", "text": "Groups", "id": "3" },
         { "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/duk32h44Y31.png", "text": "Watch", "id": "4" },
@@ -40,34 +40,78 @@ export default function LeftColumn({userPic , userName}) {
     }
 
     return (
-        <div className='left_column_container'>
-            <ul className='left_column_top_list'>
-                {firstList.map((el) => (
-                    <li key={el.id} className='list_element'><img src={el.url} alt="#"/><span className='list_title'>{el.text}</span></li>
-                ))}
-
-            </ul>
-            <ul className={hidden ? "left_column_bot_list " : "left_column_bot_list hidden"}>
-                {secondList.map((sec) => (
-                    <li key={sec.id} className='list_element'><img src={sec.url} alt="#"/><span className='list_title'>{sec.text}</span></li>
-                ))}
-            </ul>
-            <button className='see_more_button' onClick={() => closedList()}><p className='button_more_arrow'>{hidden ? "^" : ">"}</p><span>{hidden ? "See less" : "See more"}</span></button>
-
-            <div className='left_column_shorcuts'>
-                <h3>Your shortcuts</h3>
-            </div>
-            <footer>
-                <ul className='left_column_footer_menu'>
-                    <li><a className='left_column_footer_li' href=''>Privacy</a></li>
-                    <li><a className='left_column_footer_li' href=''>Terms</a></li>
-                    <li><a className='left_column_footer_li' href=''>Advertising</a></li>
-                    <li><a className='left_column_footer_li' href=''>Ad choices</a></li>
-                    <li><a className='left_column_footer_li' href=''>Cookies</a></li>
-                    <li><a className='left_column_footer_li' href=''>More</a></li>
-                    <li><a className='left_column_footer_li' href=''>Meta 2022</a></li>
-                </ul>
-            </footer>
+      <div className="left_column_container">
+        <div className="user_inf ">
+          <img src={userPic} alt="" className="avatar_picture" />
+          <h3>{title}</h3>
         </div>
-    )
+        <ul className="left_column_top_list">
+          {firstList.map((el) => (
+            <li key={el.id} className="list_element">
+              <img src={el.url} alt="#" />
+              <span className="list_title">{el.text}</span>
+            </li>
+          ))}
+        </ul>
+        <ul
+          className={
+            hidden ? "left_column_bot_list " : "left_column_bot_list hidden"
+          }
+        >
+          {secondList.map((sec) => (
+            <li key={sec.id} className="list_element">
+              <img src={sec.url} alt="#" />
+              <span className="list_title">{sec.text}</span>
+            </li>
+          ))}
+        </ul>
+        <button className="see_more_button" onClick={() => closedList()}>
+          <p className="button_more_arrow">{hidden ? "^" : ">"}</p>
+          <span>{hidden ? "See less" : "See more"}</span>
+        </button>
+
+        <div className="left_column_shorcuts">
+          <h3>Your shortcuts</h3>
+        </div>
+        <footer>
+          <ul className="left_column_footer_menu">
+            <li>
+              <a className="left_column_footer_li" href="">
+                Privacy
+              </a>
+            </li>
+            <li>
+              <a className="left_column_footer_li" href="">
+                Terms
+              </a>
+            </li>
+            <li>
+              <a className="left_column_footer_li" href="">
+                Advertising
+              </a>
+            </li>
+            <li>
+              <a className="left_column_footer_li" href="">
+                Ad choices
+              </a>
+            </li>
+            <li>
+              <a className="left_column_footer_li" href="">
+                Cookies
+              </a>
+            </li>
+            <li>
+              <a className="left_column_footer_li" href="">
+                More
+              </a>
+            </li>
+            <li>
+              <a className="left_column_footer_li" href="">
+                Meta 2022
+              </a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    );
 }
