@@ -3,6 +3,8 @@
     background: rgb(237, 240, 246);
     width: 45%;
     justify-content: center ;
+    
+    margin-top: 84px;
 }
 .feed-container{
     width: 100%;
