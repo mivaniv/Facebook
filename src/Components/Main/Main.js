@@ -8,7 +8,7 @@ export default function Main({userPic,user}) {
   return (
     <div className="main-block">
       <LeftColumn userPic={userPic} title={user?.displayName}></LeftColumn>
-      <Feed></Feed>
+      <Feed userName={user?.displayName} userPic={userPic}></Feed>
       <RightColumn></RightColumn>
     </div>
   );

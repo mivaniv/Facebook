@@ -6,7 +6,7 @@ import './PostInput.css'
 import Modal from './ModalInput/ModalInput'
 import Mark from '../../HomeHeader/images/mark.jpeg'
 
-export default function PostInput() {
+export default function PostInput({userName , userPic}) {
 
     const [visible, setVisible] = useState(false)
 
@@ -32,7 +32,7 @@ export default function PostInput() {
                     </label>
                 </div>
             </div>
-            <Modal visible={visible} setVisible={setVisible}></Modal>
+            <Modal userName={userName} userPic={userPic} visible={visible} setVisible={setVisible}></Modal>
         </>
     )
 }

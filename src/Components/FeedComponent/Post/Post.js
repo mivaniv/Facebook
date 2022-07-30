@@ -3,7 +3,7 @@ import './Post.css'
 
 export default function Post({ profPic, nickName, recTime, text, postPic }) {
     return (
-        <div>
+        <div className='post'>
             <div className='post-container'>
                 <div className='post-top-section'>
                     <img className='post-profile-pic' src={profPic}></img>
